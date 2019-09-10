@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Simple Api</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        td {
+            padding: 4px;
+        }
+    </style>
+    <script src='main.js'></script>
+</head>
+
+<body>
+
+    <table border="1" width="90%" cellspacing="0" BORDERCOLOR="#d1e0e0" align="center">
+        <tr>
+            <th colspan="4" style="height: 35px">
+                API Structure
+            </th>
+        </tr>
+        <tr>
+            <th>
+                URL
+            </th>
+            <th>
+                METHOD
+            </th>
+            <th>
+                Param
+            </th>
+            <th>
+                Body Type
+            </th>
+        </tr>
+        <tr>
+            <td>
+                http://192.168.0.135/simple_api/bookmarks.php
+            </td>
+            <td>
+                GET
+            </td>
+            <td>
+                None
+            </td>
+            <td>
+                None
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                http://192.168.0.135/simple_api/add_bookmark_form.php
+            </td>
+            <td>
+                POST
+            </td>
+            <td>
+                title,link
+            </td>
+            <td>
+                Form-data
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                http://192.168.0.135/simple_api/delete_bookmark_form.php
+            </td>
+            <td>
+                GET
+            </td>
+            <td>
+                id
+            </td>
+            <td>
+                URL
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                http://192.168.0.135/simple_api/add_bookmark_form_raw.php
+            </td>
+            <td>
+                POST
+            </td>
+            <td>
+                <pre>
+                {
+                    "title":"Google",
+                    "link":"http://google.com"
+                }
+                </pre>
+            </td>
+            <td>
+                Raw
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                http://192.168.0.135/simple_api/bookmarks_with_token.php
+            </td>
+            <td>
+                GET
+            </td>
+            <td>
+                token (in Header)
+            </td>
+            <td>
+                None
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
